@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package catalog;
+
+service CatalogService {
+  rpc FindOneProduct (ProductById) returns (Product) {},
+  rpc findAllProduct () returns (Product) {}
+}
+
+message ProductById {
+  int32 id = 1;
+}
+
+message Product {
+  int32 id = 1;
+  string name = 2;
+}

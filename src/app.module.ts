@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { IamModule } from './iam/iam.module';
+import { CatalogModule } from './catalog/catalog.module';
 import hostsConfig from './config/hosts.config';
 @Module({
   imports: [
@@ -12,7 +13,8 @@ import hostsConfig from './config/hosts.config';
         hostsConfig
       ]
     }),
-    IamModule
+    IamModule,
+    CatalogModule
   ],
   controllers: [AppController],
   providers: [AppService],
