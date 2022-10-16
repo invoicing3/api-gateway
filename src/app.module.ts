@@ -8,7 +8,7 @@ import hostsConfig from './config/hosts.config';
   imports: [
     ClientsModule.register([
       {
-        name: "IAM",
+        name: "IAM_MICROSERVICE",
         transport: Transport.TCP,
         // options: {
         //   host: "localhost"
