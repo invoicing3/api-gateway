@@ -1,7 +1,6 @@
 name: push
 on: 
   push:
-    branches: [master]
 
 jobs:
   test:
