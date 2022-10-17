@@ -8,6 +8,21 @@ import { CatalogModule } from './catalog/catalog.module';
 import hostsConfig from './config/hosts.config';
 @Module({
   imports: [
+    // ClientsModule.register([
+    //   {
+    //     name: 'NOTIFICATION_MICROSERVICE',
+    //     transport: Transport.KAFKA,
+    //     options: {
+    //       client: {
+    //         clientId: 'hero',
+    //         brokers: ['kafka:9092'],
+    //       },
+    //       consumer: {
+    //         groupId: 'notification-consumer'
+    //       }
+    //     }
+    //   },
+    // ]),
     ConfigModule.forRoot({
       load: [
         hostsConfig

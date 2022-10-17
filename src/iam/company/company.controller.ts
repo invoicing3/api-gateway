@@ -10,8 +10,8 @@ export class CompanyController {
   constructor(private readonly iamService: IamService) {}
 
   @Post()
-  create(@Body() createCompanyDto: CreateCompanyDto) {
-    // return this.iamService.create(createCompanyDto);
+  async create(@Body() createCompanyDto: CreateCompanyDto) {
+    return await this.iamService.createCompany(createCompanyDto);
   }
   @Get()
   findOne() {
