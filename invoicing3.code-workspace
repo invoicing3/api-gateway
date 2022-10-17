@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../catalog"
+		},
+		{
+			"path": "../dev"
+		},
+		{
+			"path": "../iam"
+		},
+		{
+			"path": "../invoicing"
+		},
+		{
+			"path": "../invoicing3.github.io"
+		}
+	],
+	"settings": {}
+}
