@@ -5,8 +5,11 @@ import { UpdateUserDto } from './dto/update-user.dto';
 import { ApiTags } from '@nestjs/swagger';
 import { IamService } from '../iam.service';
 
-@Controller('iam/users')
-@ApiTags('iam')
+@Controller({
+  version: '1',
+  path: 'iam/users'
+})
+@ApiTags('iam',"v1")
 export class UserController {
   constructor(private readonly iamService: IamService) {}
 
