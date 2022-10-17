@@ -24,6 +24,7 @@ import hostsConfig from './config/hosts.config';
     //   },
     // ]),
     ConfigModule.forRoot({
+      isGlobal: true,
       load: [
         hostsConfig
       ]

@@ -4,8 +4,11 @@ import { IamService } from '../iam.service';
 import { CreateCompanyDto } from './dto/create-company.dto';
 import { UpdateCompanyDto } from './dto/update-company.dto';
 
-@Controller('iam/companies')
-@ApiTags('iam')
+@Controller({
+  version: '1',
+  path: 'iam/companies'
+})
+@ApiTags('iam',"v1")
 export class CompanyController {
   constructor(private readonly iamService: IamService) {}
 

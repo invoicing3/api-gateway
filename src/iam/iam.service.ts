@@ -7,8 +7,8 @@ import { CreateCompanyDto } from './company/dto/create-company.dto';
 export class IamService {
   constructor(@Inject("IAM_MICROSERVICE") private readonly iamMicroservice: ClientProxy) {}
   async createCompany(createCompanyDto: CreateCompanyDto) {
-    const res = await this.iamMicroservice.emit("createCompany",{}).toPromise();
-    console.log(res)
+    const res = await this.iamMicroservice.emit("createCompany",createCompanyDto).toPromise();
+    // console.log(res)
     return 'This action adds a new iam';
   }
 
