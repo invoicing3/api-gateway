@@ -13,24 +13,18 @@ export class CompanyController {
   create(@Body() createCompanyDto: CreateCompanyDto) {
     // return this.iamService.create(createCompanyDto);
   }
-
   @Get()
-  findAll() {
-    // return this.iamService.findAll();
-  }
-
-  @Get(':id')
-  findOne(@Param('id') id: string) {
+  findOne() {
     // return this.iamService.findOne(+id);
   }
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateCompanyDto: UpdateCompanyDto) {
+  @Patch()
+  update( @Body() updateCompanyDto: UpdateCompanyDto) {
     // return this.iamService.update(+id, updateCompanyDto);
   }
 
-  @Delete(':id')
-  remove(@Param('id') id: string) {
+  @Delete()
+  remove() {
     // return this.iamService.remove(+id);
   }
 }
