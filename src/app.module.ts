@@ -6,8 +6,12 @@ import { ConfigModule } from '@nestjs/config';
 import { IamModule } from './iam/iam.module';
 import { CatalogModule } from './catalog/catalog.module';
 import hostsConfig from './config/hosts.config';
+import { LoggerModule } from 'nestjs-pino';
 @Module({
   imports: [
+    LoggerModule.forRoot({
+      
+    }),
     // ClientsModule.register([
     //   {
     //     name: 'NOTIFICATION_MICROSERVICE',
